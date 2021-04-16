@@ -1,0 +1,15 @@
+#includ<studio.h>
+#include<conio.h>
+Int main()
+{
+Int a,b,temp;
+Printed("inter the two valve of a and b \n");
+Scanf("%d%d",&a,&b);
+Printed("before swapping \n a=%d\n b=%d\n",a,b);
+Temp=a;
+a=b;
+b=temp;
+Printf("after swapping\n a=%d\n b=%d\n"a,b);
+fetch();
+return 0;
+}
