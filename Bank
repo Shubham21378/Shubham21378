@@ -1,0 +1,89 @@
+#include<stdio.h>
+#include<conio.h>
+int list();
+void diposte();
+void transfer();
+void withdrow();
+void checkdetail();
+int totalAmount=1000,Amount,Amo,Tr,totaldiposit=0,totalwith=0,totaltr=0;
+void main  ()
+{
+	clrscr();
+	while(1)
+	{
+	
+     switch(list())
+     {
+     	case1:
+     		diposite();
+     		totaldiposite+=amount;
+     		break;
+     	case2:
+     		withdrow();
+     		if(amo<=totalamount)
+     		totalwith+=amo;
+     		break;
+     		
+		case3:
+			transfer();
+			if(tr<=totalamount)
+			totaltr+=tr;
+			break;
+		case4:
+			checkdetail();
+			break;
+		case5:
+			exit(0);
+		default:
+		printf("\ninviled :id choice:"); 	
+	 }
+    }
+	getch();
+}
+
+void list()
+{
+	int ch;
+	printf("\n1.diposite:");
+	printf("\n2.withdrow:");
+	printf("\n3.transfer:");
+	printf("\n4.chicdetail:");
+	printf("\n5.exit:");
+	printf("\nEnter the choise: ");
+	scanf("%d",&ch);
+	return(ch); 
+	
+}
+void diposite()
+{
+	printf("\n enter the amount you want to diposite: ");
+	scanf("%d"&Amount);
+	totalAmount+=Amount;
+}
+void withdrow()
+{
+	printf("\n enter the amount u wish to withdrow:");
+	scanf("%d",&Amo);
+	if(Amo<=TotalAmount);
+	totalAmount-=Amo;
+	else
+	printf("\nLess amount withdrow is not possible:");
+	
+}
+   void transfer()
+   {
+   	printf("\n enter the amount you want to transfer:");
+   	scanf("%d",&Tr);
+   	if(Tr<=totalAmount-=Tr);
+   	else
+   	printf("\n less amount tranfer is not possible:");
+   	
+   }
+void checkDetail()
+{
+	printf("Total ammount=%d",total amount);
+	printf("\n total diposited amount=%d",totaldiposite);
+	printf("\n total withdrown   amount=%",totalwith);
+	printf("\ntotal transfered amount=%d",totaltr);
+	
+}
